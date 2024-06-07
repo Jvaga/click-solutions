@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Component</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="btn-wrapper">
+      <button id="togglePanelButton" class="togglePanelButton">
+        Filter
+        <span class="filter-icon">
+          <img src="assets/icons8-filter-16.png" alt="Filter Icon" />
+        </span>
+      </button>
+    </div>
+    <div id="filterPanel" class="hidden">
+      <div class="toolbar">
+        <span>Filters</span>
+        <span>
+          <span href="#" id="clearAllButton">Clear all</span> -
+          <span href="#" id="saveViewButton">Save view</span>
+        </span>
+      </div>
+      <div class="search-wrapper">
+        <div class="search">
+          <input type="text" placeholder="Search" id="searchInput" />
+          <img src="assets/magnifier.svg" alt="" />
+        </div>
+      </div>
+      <div id="accordion">
+        <div class="accordion-item">
+          <span class="accordion-header">
+            <span class="accordion-header-title"> Investment vehicle </span>
+            <img
+              src="assets/down-arrow.svg"
+              class="accordion-icon"
+              alt="Accordion Icon"
+            />
+          </span>
+          <div class="accordion-content">
+            <ul class="filter-list">
+              <li><input type="checkbox" /> Investment vehicle 1</li>
+              <li><input type="checkbox" /> Investment vehicle 2</li>
+              <li><input type="checkbox" /> Investment vehicle 3</li>
+              <li><input type="checkbox" /> Investment vehicle 4</li>
+              <li><input type="checkbox" /> Investment vehicle 5</li>
+              <li><input type="checkbox" /> Investment vehicle 6</li>
+              <li><input type="checkbox" /> Investment vehicle 7</li>
+            </ul>
+            <button class="view-all-button">View all...</button>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <span class="accordion-header">
+            <span class="accordion-header-title">Company</span>
+            <img
+              src="assets/down-arrow.svg"
+              class="accordion-icon"
+              alt="Accordion Icon"
+          /></span>
+          <div class="accordion-content">
+            <ul class="filter-list">
+              <li><input type="checkbox" /> Aircall</li>
+              <li><input type="checkbox" /> Foxintelligence</li>
+              <li><input type="checkbox" /> Spendesk</li>
+              <li><input type="checkbox" /> Upflow</li>
+              <li><input type="checkbox" /> Yousign</li>
+              <li><input type="checkbox" /> Spendesk</li>
+              <li><input type="checkbox" /> Upflow</li>
+              <li><input type="checkbox" /> Yousign</li>
+            </ul>
+            <button class="view-all-button">View all...</button>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <span class="accordion-header">
+            <span class="accordion-header-title"> Deal source</span>
+            <img
+              src="assets/down-arrow.svg"
+              class="accordion-icon"
+              alt="Accordion Icon"
+            />
+          </span>
+          <div class="accordion-content">
+            <ul class="filter-list">
+              <li><input type="checkbox" /> Deal source 1</li>
+              <li><input type="checkbox" /> Deal source 2</li>
+              <li><input type="checkbox" /> Deal source 3</li>
+              <li><input type="checkbox" /> Deal source 4</li>
+              <li><input type="checkbox" /> Deal source 5</li>
+            </ul>
+            <button class="view-all-button">View all...</button>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <span class="accordion-header">
+            <span class="accordion-header-title">Status</span>
+            <img
+              src="assets/down-arrow.svg"
+              class="accordion-icon"
+              alt="Accordion Icon"
+            />
+          </span>
+          <div class="accordion-content">
+            <ul class="filter-list">
+              <li><input type="checkbox" /> Status 1</li>
+              <li><input type="checkbox" /> Status 2</li>
+              <li><input type="checkbox" /> Status 3</li>
+              <li><input type="checkbox" /> Status 4</li>
+              <li><input type="checkbox" /> Status 5</li>
+            </ul>
+            <button class="view-all-button">View all...</button>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <span class="accordion-header">
+            <span class="accordion-header-title">Date</span>
+
+            <img
+              src="assets/down-arrow.svg"
+              class="accordion-icon"
+              alt="Accordion Icon"
+            />
+          </span>
+          <div class="accordion-content">
+            <ul class="filter-list">
+              <li><input type="checkbox" /> Date 1</li>
+              <li><input type="checkbox" /> Date 2</li>
+              <li><input type="checkbox" /> Date 3</li>
+              <li><input type="checkbox" /> Date 4</li>
+              <li><input type="checkbox" /> Date 5</li>
+              <li><input type="checkbox" /> Date 6</li>
+            </ul>
+            <button class="view-all-button">View all...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

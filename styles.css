@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 0;
+}
+
+#filterPanel {
+  padding-bottom: 10px;
+  width: 350px;
+  position: absolute;
+  border: 2px solid;
+  border-color: #c3c2c2;
+  margin-block-start: 5px;
+  border-radius: 2px;
+}
+
+.togglePanelButton {
+  align-self: flex-end;
+  border: 2px solid;
+  border-color: #c3c2c2;
+  background-color: white;
+  width: 150px;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+}
+.filter-icon img {
+  filter: grayscale(100%);
+  width: 15px;
+  height: 15px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.toolbar span span {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.search-wrapper {
+  padding: 0 20px;
+}
+.search {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search img {
+  width: 20px;
+}
+
+.search input,
+.search input:focus {
+  border: none;
+  outline: none;
+  width: 90%;
+}
+.search input:focus {
+  border: none;
+  outline: none;
+}
+
+.accordion-item {
+  width: 100%;
+  margin: auto;
+}
+
+.accordion-item::before {
+  content: "";
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: 1px;
+  background-color: #f7f8fa;
+}
+
+.accordion-item:first-child::before {
+  display: none;
+}
+
+.accordion-item:first-child {
+  border-top: none;
+}
+
+.accordion-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.accordion-header-title {
+  color: black;
+  opacity: 0.5;
+}
+.accordion-header-title.open {
+  color: black;
+  opacity: 1;
+}
+
+.accordion-header img {
+  width: 20px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 20px;
+  background-color: #f7f8fa;
+}
+
+.filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-block: 10px;
+}
+
+.filter-list li {
+  margin-bottom: 5px;
+}
+
+.view-all-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.5;
+}
